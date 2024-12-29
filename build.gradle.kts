@@ -22,6 +22,14 @@ dependencies {
 	modImplementation("net.fabricmc.fabric-api:fabric-api:${findProperty("fabric_version")}")
 }
 
+tasks.withType(net.fabricmc.loom.task.AbstractRunTask::class) {
+	javaLauncher = javaToolchains.launcherFor {
+		vendor = JvmVendorSpec.JETBRAINS
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+	jvmArgs("-XX:+AllowEnhancedClassRedefinition")
+}
+
 tasks {
 	processResources {
 		inputs.property("version", version)
