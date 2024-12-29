@@ -10,7 +10,7 @@
 		"sources": "https://github.com/Wyne10/ModTemplate",
 		"issues": "https://github.com/Wyne10/ModTemplate/issues"
 	},
-	"license": "GPL-3.0",
+	"license": "MIT",
 	"icon": "assets/modtemplate/icon.png",
 	"environment": "client",
 	"entrypoints": {
