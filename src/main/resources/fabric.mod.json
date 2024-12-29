@@ -14,17 +14,13 @@
 	"icon": "assets/modtemplate/icon.png",
 	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"me.wyne.ModTemplate"
-		],
 		"client": [
 			"me.wyne.ModTemplate"
 		]
 	},
 	"mixins": [
-		"modtemplate.mixins.json",
 		{
-			"config": "modtemplate.client.mixins.json",
+			"config": "modtemplate.mixins.json",
 			"environment": "client"
 		}
 	],
