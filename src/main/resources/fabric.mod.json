@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "modtemplate",
+	"version": "${version}",
+	"name": "ModTemplate",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": ["Wyne"],
+	"contact": {
+		"homepage": "https://github.com/Wyne10/",
+		"sources": "https://github.com/Wyne10/ModTemplate",
+		"issues": "https://github.com/Wyne10/ModTemplate/issues"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/modtemplate/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"me.wyne.ModTemplate"
+		],
+		"client": [
+			"me.wyne.ModTemplate"
+		]
+	},
+	"mixins": [
+		"modtemplate.mixins.json",
+		{
+			"config": "modtemplate.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
